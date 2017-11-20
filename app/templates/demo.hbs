@@ -1,0 +1,15 @@
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Input</th>
+	</thead>
+	{{#vertical-collection model
+			containerSelector="body"
+			tagName="tbody"
+			estimateHeight=30
+			as |line|}}
+
+		{{demo-table-row line=line}}
+
+	{{/vertical-collection}}
+</table>
